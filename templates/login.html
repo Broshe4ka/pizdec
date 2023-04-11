@@ -19,9 +19,9 @@
       </header>
         <main class="main">
           <div class="container">
-          <form action="" class="login">
-            <input type="text" placeholder="Логин" name="" id="" class="input">
-            <input type="password" placeholder="Пароль" name="" id="" class="input">
+          <form action="{{ url_for('logged') }}" method="POST" enctype="multipart/form-data" class="login">
+            <input type="text" placeholder="Логин" name="login" id="login" class="input">
+            <input type="password" placeholder="Пароль" name="passwd" id="passwd" class="input">
             <a class="form__link" href="/reg">Зарегестрироваться</a>
             <button type="submit" class="form__btn">Войти</button>
           </form>
