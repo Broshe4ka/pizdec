@@ -6,11 +6,13 @@ app.config['SECRET_KEY'] = 'f4fd3b960ef03a8d03f2bdb12133201d35fe0481'
 
 @app.route('/')
 def main():
+    is_login()
     return render_template('index.html')
 
 
 @app.route('/login')
 def login():
+    is_login()
     if session['login']:
         return redirect(url_for('main'))
     return render_template('login.html')
@@ -18,6 +20,7 @@ def login():
 
 @app.route('/reg')
 def registration():
+    is_login()
     if session['login']:
         return redirect(url_for('main'))
     return render_template('reg.html')
