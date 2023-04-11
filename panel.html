@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Новости</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="container">
           <div class="header__body">
-            <a href="/"><h1 class="header__logo">Привет, я долбаеб!</h1></a>
-            <a href="/login" class="header__btn">Войти</a>
+            <a href="index.html"><h1 class="header__logo">Привет, я долбаеб!</h1></a>
+            <a href="/login.html" class="header__btn">Войти</a>
           </div>
         </div>
       </header>
@@ -22,7 +22,7 @@
         <div class="posts">
           <section class="post">
             <h2 class="post__title">Заголовок</h2>
-            <img src="{{ url_for('static', filename='imgs/post1.jpg') }}" alt="" class="post__img" />
+            <img src="assets/imgs/post1.jpg" alt="" class="post__img" />
             <div class="post__desc">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
               porro cumque aliquid doloremque dignissimos voluptatibus eveniet
@@ -37,7 +37,7 @@
 
           <section class="post">
             <h2 class="post__title">Заголовок</h2>
-            <img src="{{ url_for('static', filename='imgs/post1.jpg') }}" alt="" class="post__img" />
+            <img src="assets/imgs/post1.jpg" alt="" class="post__img" />
             <div class="post__desc">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
               porro cumque aliquid doloremque dignissimos voluptatibus eveniet

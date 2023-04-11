@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Новости</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />g
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="container">
           <div class="header__body">
-            <a href="index.html"><h1 class="header__logo">Привет, я долбаеб!</h1></a>
-            <a href="/login.html" class="header__btn">Войти</a>
+            <a href="/"><h1 class="header__logo">Привет, я долбаеб!</h1></a>
+            <a href="/login" class="header__btn">Войти</a>
           </div>
         </div>
       </header>
@@ -24,7 +24,7 @@
             <input type="text" placeholder="Логин" name="" id="" class="input">
             <input type="password" placeholder="Пароль" name="" id="" class="input">
             <input type="password" placeholder="Подтвердите пароль" name="" id="" class="input">
-            <a class="form__link" href="/login.html">Войти</a>
+            <a class="form__link" href="/login">Войти</a>
             <button type="submit" class="form__btn">Зарегестрироваться</button>
           </form>
         </div>
